@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Logout</title>
+</head>
+<body>
+    <div class="container">
+        {% include 'accounts/nav.html' %}
+        
+        {% block content %}
+        {% endblock content %}
+    </div>    
+</body>
+</html>
