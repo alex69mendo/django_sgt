@@ -2,5 +2,12 @@
 
 
 {% block content%}
+
+    {% if user.is_authenticated %}
+        <h3>Hi {{ user.username }}, ingresaste al sistema </h3>
+    {% else%}
+        <p>Tu no estas logeado en el sistema</p>
+    {% endif %}
+
     <h2>Pagina principal</h2>
 {% endblock content %}
