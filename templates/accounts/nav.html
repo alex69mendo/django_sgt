@@ -11,9 +11,15 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'logout' %}">Logout</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'password_change' %}">Cambiar Password</a>
+            </li>
           {% else %}
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signup' %}">Registrarse</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'about' %}">About</a>
